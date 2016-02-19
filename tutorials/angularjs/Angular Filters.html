@@ -1,0 +1,74 @@
+<script>
+	app.controller("filterCtrl",function($scope)
+	{
+		$scope.employee=
+		[
+			{"Name":"Sunil","Mobile":"970909565","Email":"Sunil@gmail.com","Doj":"02/01/2016","Salary":"5000","Address":"Pune"}
+		]
+
+	});
+
+</script>
+<div ng-init="showEx=false">
+	<table class="table table-bordered">
+			<tbody><tr>
+			<th>Sr.No.</th>
+			<th>Name</th>
+			<th>Description</th>
+			</tr>
+			<tr>
+			<td>1</td>
+			<td>uppercase</td>
+			<td>converts a text to upper case text.</td>
+			</tr>
+			<tr>
+			<td>2</td>
+			<td>lowercase</td>
+			<td>converts a text to lower case text.</td>
+			</tr>
+			<tr>
+			<td>3</td>
+			<td>currency</td>
+			<td>formats text in a currency format.</td>
+			</tr>
+			<tr>
+			<td>4</td>
+			<td>filter</td>
+			<td>filter the array to a subset of it based on provided criteria.</td>
+			</tr>
+			<tr>
+			<td>5</td>
+			<td>orderby</td>
+			<td>orders the array based on provided criteria.</td>
+			</tr>
+			</tbody></table>
+	<div ng-show="showEx" id="showEx">
+
+		<pre>
+			<h3>Example</h3>
+			<h4>This example includes all the filter listed ovobe.</h4>
+			<div>
+				<table border='1' style="width:70%">
+					<tr>
+						<td><b>Name</b></td>
+						<td><b>Mobile</b></td>
+						<td><b>Email Id</b></td>
+						<td><b>Doj</b></td>
+						<td><b>Salary</b></td>
+						<td><b>Address</b></td>
+					</tr>
+				<!--	<tr ng-repeat="emp in employee">
+						<td>{{emp.Name}}</td>
+						<td>{{emp.Mobile}}</td>
+						<td>{{emp.Email Id}}</td>
+						<td>{{emp.Doj}}</td>
+						<td>{{emp.Salery}}</td>
+						<td>{{emp.Address}}</td>
+					</tr>-->
+				</table>
+			</div>
+		</pre>
+		<br>
+	</div>
+	<button type="button" class="btn btn-primary" ng-click="showEx = !showEx">{{(showEx==false)?"Show example":"Hide example"}}</button>
+</div>
