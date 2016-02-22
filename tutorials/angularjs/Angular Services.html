@@ -1,0 +1,61 @@
+
+<div class="container">
+	<p><strong>ServiangularServicesController.jsces</strong> are javascript functions and are responsible to do a specific tasks only. This makes them an individual entity which is maintainable and testable. Controllers, filters can call them as on requirement basis. Services are normally injected using dependency injection mechanism of AngularJS.</p>
+	<p></p>
+	<br>
+	AngularJS has about 30 built-in services. One of them is the $http service.
+
+
+	<div class="list-group" >
+		<ol start='1' style="cursor:pointer">
+			<li ng-init="showAnimate=false">
+				<a ng-class="setStyle(showAnimate)" ng-click="showAnimate=!showAnimate">$animate</a>
+			</li>
+				<div ng-if="showAnimate" class="exampleDiv">
+					<center>AngularJS provides animated transitions, with help from CSS.</center><br>
+					<div> </div>
+					<center><button class="btn btn-primary">Animate</button></center>
+				</div>
+			<li ng-init="showCompile=false">
+				<a ng-class="setStyle(showCompile)" ng-click="showCompile=!showCompile">$compile</a>
+				<div ng-if="showCompile" class="exampleDiv">Compile</div>
+			</li>
+			<li ng-init="showController=false">
+				<a ng-class="setStyle(showController)" ng-click="showController=!showController">$controller</a>
+				<div ng-if="showController" class="exampleDiv">Controller</div>
+			</li>
+			<li ng-init="showDocument=false">
+				<a ng-class="setStyle(showDocument)" ng-click="showDocument=!showDocument">$document</a>
+				<div ng-if="showDocument" class="exampleDiv">Document</div>
+			</li>
+			<li ng-init="showFilter=false">
+				<a ng-class="setStyle(showFilter)" ng-click="showFilter=!showFilter">$filter</a>
+				<div ng-if="showFilter" class="exampleDiv">Document</div>
+			</li>
+			<li ng-init="showHttp=false">
+				<a ng-class="setStyle(showHttp)" ng-click="showHttp=!showHttp">$http</a>
+				<div ng-if="showHttp" class="exampleDiv">Document</div>
+			</li>
+			<li ng-init="showInterval=false">
+				<a ng-class="setStyle(showInterval)" ng-click="showInterval=!showInterval">$interval</a>
+				<div ng-if="showInterval" class="exampleDiv">Document</div>
+			</li>
+			<li ng-init="showLocation=false">
+				<a ng-class="setStyle(showLocation)" ng-click="showLocation=!showLocation">$location</a>
+				<div ng-if="showLocation" class="exampleDiv">Document</div>
+			</li>
+			<li ng-init="showLog=false">
+				<a ng-class="setStyle(showLog)" ng-click="showLog=!showLog">$log</a>
+				<div ng-if="showLog" class="exampleDiv">Document</div>
+			</li>
+			<li ng-init="showParse=false">
+				<a ng-class="setStyle(showParse)" ng-click="showParse=!showParse">$parse</a>
+				<div ng-if="showParse" class="exampleDiv">Document</div>
+			</li>
+			<li ng-init="showTimeout=false">
+				<a ng-class="setStyle(showTimeout)" ng-click="showTimeout=!showTimeout">$timeout</a>
+				<div ng-if="showTimeout" class="exampleDiv">Document</div>
+			</li>
+		</ol>
+	</div>
+</div>

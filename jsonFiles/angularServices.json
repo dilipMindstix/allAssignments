@@ -1,0 +1,17 @@
+[
+	{"service":"$animate","variable":"showAnimate"},
+	{"service":"$compile","variable":"showCompile"},
+	{"service":"$controller","variable":"showController"},
+	{"service":"$document","variable":"showDocument"},
+	{"service":"$filter","variable":"showFilter"},
+	{"service":"$http","variable":"showHttp"},
+	{"service":"$interval","variable":"showInterval"},
+	{"service":"$location","variable":"showLocation"},
+	{"service":"$log","variable":"showLog"},
+	{"service":"$parse","variable":"showParse"},
+	{"service":"$timeout","variable":"showTimeout"},
+	{"service":"$window","variable":"showWindows"},
+	{"service":"$templateRequest","variable":"showTemplateRequest"},
+	{"service":"$rootScope","variable":"showRootScope"},
+	{"service":"$rootElement","variable":"showRootElement"}
+]
